@@ -9,7 +9,8 @@
 
     register_nav_menus(
         array(
-            'my_main_menu' => 'Main Menu'
+            'my_main_menu' => 'Main Menu',
+            'footer_menu' => 'Footer Menu'
         )
     );
 ?>
