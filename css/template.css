@@ -7,3 +7,7 @@
     background: yellow;
     height: 30px;
 }
+
+.main-menu ul li{
+    display: inline;
+}
