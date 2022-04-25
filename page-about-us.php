@@ -1,16 +1,6 @@
 <?php get_header(); ?>
     <div class="content-area">
         <main>
-            <section class="slide">
-                <div class="container">
-                    <div class="row">Slide</div>
-                </div>
-            </section>
-            <section class="service">
-                <div class="container">
-                    <div class="row">Services</div>
-                </div>
-            </section>
             <section class="middle-area">
                 <div class="container">
                     <div class="row">
@@ -36,11 +26,6 @@
                             <?php endif; ?>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="map">
-                <div class="container">
-                    <div class="row">Map</div>
                 </div>
             </section>
         </main>
