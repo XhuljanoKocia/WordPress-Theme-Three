@@ -27,4 +27,31 @@
 
     }
     add_action('after_setup_theme', 'berserk_config', 0);
+
+    // Registering our sidebars
+    add_action('widgets_init', 'berserk_sidebars');
+    function berserk_sidebars(){
+        register_sidebar(
+            array(
+                'name' => 'Home Page Sidebar',
+                'id' => 'sidebar-1',
+                'description' => 'This is the Home Page Sidebar. You can add your widgets here.',
+                'before_widget' => '<div class="widget-wrapper">',
+                'after_widget' => '</div>',
+                'before_title' => '<h2 class="widget-title">',
+                'after_title' => '</h2>'
+            )
+        );
+        register_sidebar(
+            array(
+                'name' => 'Blog Sidebar',
+                'id' => 'sidebar-2',
+                'description' => 'This is the Blog Page Sidebar. You can add your widgets here.',
+                'before_widget' => '<div class="widget-wrapper">',
+                'after_widget' => '</div>',
+                'before_title' => '<h2 class="widget-title">',
+                'after_title' => '</h2>'
+            )
+        );
+    }
 ?>

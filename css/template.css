@@ -24,7 +24,7 @@ h4{font-size: 18px; margin-top: 0;}
 .slide{padding: 25px 0;}
 
 /* Services */
-.services{background: #4c1b1b; padding: 25px 0; color: #fefefe;}
+.service{background: #4c1b1b; padding: 25px 0; color: #fefefe;}
 
 /* Middle Area */
 .middle-area{padding: 25px 0;}
@@ -35,6 +35,8 @@ h4{font-size: 18px; margin-top: 0;}
 
 /* Footer */
 footer{background: #000; padding: 15px 0; color: #fcfae1;}
+footer a{color: #fcfae1;}
+footer a:hover{color: #e58888;}
 
 /* Footer - Footer Menu */
 .footer-menu ul{list-style: none; padding: 0; margin: 0; font-size: 20px;}
