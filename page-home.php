@@ -45,7 +45,20 @@
                     <div class="row">
                         <aside class="sidebar col-md-3 h-100"><?php get_sidebar('home'); ?></aside>
                         <div class="news col-md-9">
-                            <p>This will be the news area of the Home Page</p>
+                            <div class="row">
+                                <div class="container">
+                                    <?php
+                                        $featured = new WP_Query('post_type=post&posts_per_page=1&cat=7,9');
+
+                                        if($featured->have_posts()):
+                                            while($featured->have_posts()):
+                                                $featured->the_post();
+                                            endwhile;
+                                            wp_reset_postdata();
+                                        endif;
+                                    ?>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
